@@ -15,6 +15,11 @@ const cartReducer = (state, action) => {
         items: [...state.items, action.payload],
       };
     case "REMOVE_ITEM":
+      if (state.items.length == 1) {
+        if (state.items[0].quantity == 1) {
+          localStorage.removeItem("cart");
+        }
+      }
       return {
         ...state,
         items: state.items.filter((item) => item.id !== action.payload),
@@ -29,6 +34,11 @@ const cartReducer = (state, action) => {
         ),
       };
     case "DECREMENT_QUANTITY":
+      if (state.items.length == 1) {
+        if (state.items[0].quantity == 1) {
+          localStorage.removeItem("cart");
+        }
+      }
       return {
         ...state,
         items: state.items

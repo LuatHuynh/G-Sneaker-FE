@@ -119,25 +119,31 @@ function App() {
           </div>
         </div>
         <div class="scroll-container" id="content">
-          {state.items.map((product) => {
-            return (
-              <CartProduct
-                product={product}
-                addClick={() => {
-                  handleAddItem(product.id);
-                }}
-                minusClick={() => {
-                  handleDecrementQuantity(product.id);
-                }}
-                plusClick={() => {
-                  handleIncrementQuantity(product.id);
-                }}
-                removeClick={() => {
-                  handleRemoveItem(product.id);
-                }}
-              ></CartProduct>
-            );
-          })}
+          {state.items.length === 0 ? (
+            <div className="width-300">
+              <div className="text-left"> Your cart is empty </div>
+            </div>
+          ) : (
+            state.items.map((product) => {
+              return (
+                <CartProduct
+                  product={product}
+                  addClick={() => {
+                    handleAddItem(product.id);
+                  }}
+                  minusClick={() => {
+                    handleDecrementQuantity(product.id);
+                  }}
+                  plusClick={() => {
+                    handleIncrementQuantity(product.id);
+                  }}
+                  removeClick={() => {
+                    handleRemoveItem(product.id);
+                  }}
+                ></CartProduct>
+              );
+            })
+          )}
         </div>
       </div>
     </div>
