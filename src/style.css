@@ -1,0 +1,250 @@
+body{
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+body::before {
+    content: "";
+    width: 100%;
+    height: 300px;
+    border-radius: 20%;
+    background-color: #F6C90E;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(-3deg) scale(1.5);
+}
+.app{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.product-image{
+    max-width: 300px;
+    height: auto;
+    padding-bottom: 150px;
+    padding-top: 20px;
+    transform: rotate(-25deg);
+}
+.product-image-background{
+    width: 300px;
+    height: 400px;
+    border-radius: 28px;
+    box-sizing: border-box;
+}
+
+.products-container{
+    width: 300px;
+    margin-bottom: 80px;
+}
+
+.our-products-container{
+    display: flex;
+    background: white;
+    flex-direction: column;
+    width: 350px;
+    height: 600px;
+    border-radius: 28px;
+    box-shadow: 0px 0px 30px 0px  #777777;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 100;
+}
+.our-products-container::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 160px;
+    background-color: #F6C90E;
+    border-top-left-radius: 28px;
+    border-bottom-right-radius: 100%;
+    box-shadow: 0px 0px 0px 0px  rgb(157, 157, 157);
+    top: inherit;
+    left: inherit;
+    z-index: -1;
+}
+
+.scroll-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    align-items: center;
+    overflow-y:scroll;
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+
+#content::-webkit-scrollbar {
+    display: none;
+}
+
+#content {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.product-description{
+    font: 0.8em sans-serif;
+}
+
+div{
+    font-family: 'Rubik', sans-serif;
+}
+
+.logo{
+    width: 40px;
+    align-self:flex-start;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.title{
+    align-self:flex-start;
+    padding-left: 25px;
+}
+
+.add-to-card{
+    border-style: none;
+    border-radius: 28px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #F6C90E;
+    height: fit-content;
+}
+.add-to-card:hover{
+    cursor: pointer;
+    background: #f5d349;
+}
+
+.margin-less{
+    margin: 10px;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.flex-row-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.cart-product-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 200px;
+}
+
+.cart-product-image-background{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-left: -10px;
+}
+
+.cart-product-image{
+    width: 115px;
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: -40px;
+    transform: rotate(-35deg);
+}
+
+.button-size{
+    width: 10px;
+}
+
+.button-image{
+    width: 28px;
+    height: 28px;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.quantity{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.trash{
+    width: 15px;
+}
+
+.trash-button{
+    background: #F6C90E;
+}
+
+.trash-button:hover{
+    cursor: pointer;
+    background: #f5d349;
+}
+
+.adjust-button{
+    border-radius: 50%;
+}
+
+.adjust-button:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+h4{
+    margin: 0;
+}
+
+.margin-top-bot-less{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.width-300{
+    width: 300px;
+}
+
+.padding-left-0{
+    padding-left: 0px;
+}
+
+.checked-button{
+    border-style: none;
+    border-radius: 50%;
+    background: #F6C90E;
+    height: fit-content;
+}
+
+.check-img{
+    width: 28px;
+}
