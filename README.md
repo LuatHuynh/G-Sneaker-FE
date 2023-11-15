@@ -4,6 +4,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### `NOTED`
+
+To scroll down to view the next products, hover over the corresponding component and use the mouse wheel to scroll
+
+### `url deploy`
+
+https://luathuynh-gsneaker.netlify.app/
+
 In the project directory, you can run:
 
 ### `npm install`
